@@ -1,5 +1,4 @@
 import React from 'react';
-import SignUpScreen from '../screens/SignUPScreen';
 import { 
     View, 
     Text, 
@@ -39,7 +38,7 @@ const Users = [
     },
 ];
 
-const SignInScreen = ({navigation}) => {
+const SignUpScreen = ({navigation}) => {
 
     const [data, setData] = React.useState({
         username: '',
@@ -215,7 +214,7 @@ const SignInScreen = ({navigation}) => {
                 </TouchableOpacity>
 
                 <TouchableOpacity
-                    onPress={() => navigation.navigate(SignUpScreen)}
+                    onPress={() => navigation.navigate('SignInScreen')}
                 >
                     <Text style={[styles.textSign, {
                         color: '#009387'
@@ -227,7 +226,7 @@ const SignInScreen = ({navigation}) => {
     );
 };
 
-export default SignInScreen;
+export default SignUpScreen;
 
 const styles = StyleSheet.create({
     container: {
