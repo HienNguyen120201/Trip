@@ -293,6 +293,7 @@ const styles = StyleSheet.create({
     },
     textSign: {
         fontSize: 18,
+        fontStyle: 'italic',
         fontWeight: 'bold'
     }
   });
