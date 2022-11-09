@@ -8,9 +8,10 @@
 
 import React from 'react';
 import SignInScreen from './src/screens/SignInScreen';
+import Map from './src/screens/Map';
 const App = ()=> {
   return (
-        <SignInScreen />
+        <Map />
   );
 };
 
