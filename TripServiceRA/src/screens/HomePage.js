@@ -6,7 +6,8 @@ import {
     ImageBackground,
     Image,
     Modal,
-    ScrollView
+    ScrollView,
+    TouchableOpacity,
 } from 'react-native';
 // import * as Animatable from 'react-native-animatable';
 // import LinearGradient from 'react-native-linear-gradient';
@@ -18,55 +19,100 @@ const HomePage = () => {
     return (
         <View style = {styles.body}>
                 <View style = {styles.view1}>
+                    
                     <View style = {styles.view4}>
+                        <TouchableOpacity>
                         <Image
                             style = {styles.SignInButton} 
-                            source = {require('../../asset/SignIn.png')}
-                            
-                        />
+                            source = {require('../../asset/SignIn.png')}                            
+                        />            
                         <Text style = {styles.LeftText} >Sign In</Text>
+                        </TouchableOpacity>
                     </View>
                     <View style = {styles.view5}>
+                    <TouchableOpacity>
                         <Image
                             style = {styles.MenuButton} 
                             source = {require('../../asset/Option_menu.png')}
                         />
-                        <Text style = {styles.RightText} >Menu</Text>
+                        <Text style = {styles.MenuText} >Menu</Text>
+                    </TouchableOpacity>
                     </View>
                 </View>
-                <View style = {styles.view2}> 
                     <View style = {styles.view7}> 
                         <Text style={styles.Trip}> Bảng tin</Text>     
                     </View>
-                    <View style = {styles.view6}> 
+                    <View style = {styles.view2}> 
+                    <ScrollView 
+                        style = {styles.Feeds}
+                        horizontal= {true}
+                        pagingEnabled = {true}>
+                        <TouchableOpacity>
+                        <Image 
+                            style = {styles.image} 
+                            source = {require('../../asset/Home_background.jpg')}
+                            resizeMode = 'contain'
+                            />
+                        </TouchableOpacity>
+                        <TouchableOpacity>
+                        <Image 
+                            style = {styles.image} 
+                            source = {require('../../asset/Home_background.jpg')}
+                            resizeMode = 'contain'
+                            />
+                        </TouchableOpacity>
+                        <TouchableOpacity>
+                        <Image 
+                            style = {styles.image} 
+                            source = {require('../../asset/Home_background.jpg')}
+                            resizeMode = 'contain'
+                            />
+                        </TouchableOpacity>
+                        <TouchableOpacity>
+                        <Image 
+                            style = {styles.image} 
+                            source = {require('../../asset/Home_background.jpg')}
+                            resizeMode = 'contain'
+                            />
+                        </TouchableOpacity>
+                    </ScrollView>
+                    </View>
+                <View style = {styles.view6}> 
+                    <TouchableOpacity>
                     <Image
                             style = {styles.friendButton} 
                             source = {require('../../asset/friends.png')}
                         />
-                    <Text style = {styles.LeftText} >Bạn bè</Text>    
-                    </View>
+                    <Text style = {styles.LeftText} >Bạn bè</Text>   
+                    </TouchableOpacity> 
                 </View>
                 <View style = {styles.view3}>   
                     <View>
+                    <TouchableOpacity>
                         <Image
                             style = {styles.friendButton} 
                             source = {require('../../asset/Add_button.png')}
                         /> 
                         <Text style = {styles.MassageText} >Tin nhắn</Text> 
+                    </TouchableOpacity>
                     </View> 
-                    <View>  
+                    <View> 
+                    <TouchableOpacity> 
                     <Image
                             style = {styles.MotorButton} 
                             source = {require('../../asset/Motorbike_icon1.png')}
                         />  
                         <Text style = {styles.CenterText} >Bắt đầu</Text> 
+                    </TouchableOpacity>
                     </View>
                     <View> 
+                    <TouchableOpacity>
                     <Image
                             style = {styles.friendButton} 
                             source = {require('../../asset/notification.png')}
                         /> 
-                        <Text style = {styles.RightText} >Thông báo</Text> 
+                        <Text style = {styles.NotifyText}>Thông báo</Text> 
+                    </TouchableOpacity>
                     </View>       
                 </View>
             </View>
@@ -82,8 +128,8 @@ const styles = StyleSheet.create({
         flexDirection:'column',
     },
     image: {
-        flex: 5 ,
-        resizeMode: 'cover',
+        width: 395,
+        height: 200,
       },
     Text: {
         color:'#00ffff',
@@ -104,15 +150,19 @@ const styles = StyleSheet.create({
         alignItems:'center',
         marginLeft: 25,
     },
-    RightText: {
+    MenuText: {
         color:'#000000',
-        alignItems:'center',
-        marginRight: 20,
+
+        marginLeft: 17,
+    },
+    NotifyText: {
+        color:'#000000',
+
+        marginLeft: 4,
     },
     view1:{
         flexDirection:'row',
-        flex: 1.5,
-
+        flex: 2,
     },
     view2:{
         flex: 5,
@@ -140,17 +190,28 @@ const styles = StyleSheet.create({
     },
 
     view6:{
-        flex: 3,
-        justifyContent: 'flex-end',
+        flex: 2,
+        justifyContent: 'flex-start',
         alignItems:'flex-start',
         marginLeft: 30,
     },
     view7:{
-        flex: 3,
+        flex: 1,
         justifyContent: 'flex-start',
         alignItems:'center',
     },
-
+    Feeds: {
+        flex:5,
+        color:'#ffffff',    
+        marginBottom:50,
+    },
+    news:{
+        backgroundColor: '#00ffff',
+        height : 50,
+        width: 50,
+        marginLeft: 30,
+    },
+    
     SignInButton:{
         width: 70,
         height: 75,

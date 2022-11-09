@@ -8,7 +8,6 @@
 
 import React from 'react';
 import HomePage from './src/screens/HomePage';
-import SignInScreen from './src/screens/SignInScreen';
 const App = ()=> {
   return (
         <HomePage />
