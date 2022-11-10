@@ -7,6 +7,7 @@ import {
     Image,
     Modal,
     ScrollView,
+    Button,
     TouchableOpacity,
 } from 'react-native';
 // import * as Animatable from 'react-native-animatable';
@@ -46,35 +47,51 @@ const HomePage = () => {
                     <ScrollView 
                         style = {styles.Feeds}
                         horizontal= {true}
-                        pagingEnabled = {true}>
-                        <TouchableOpacity>
+                        pagingEnabled = {true}>   
+                        <View>
                         <Image 
                             style = {styles.image} 
                             source = {require('../../asset/Home_background.jpg')}
                             resizeMode = 'contain'
                             />
-                        </TouchableOpacity>
-                        <TouchableOpacity>
+                        <Button 
+                            title='Read More'
+                            style = {styles.NewsButton}></Button>
+                        </View>
+                        
+                        <View>
                         <Image 
                             style = {styles.image} 
                             source = {require('../../asset/Home_background.jpg')}
                             resizeMode = 'contain'
                             />
-                        </TouchableOpacity>
-                        <TouchableOpacity>
+                        <Button 
+                            title='Read More'
+                            style = {styles.NewsButton}></Button>
+                        </View>
+
+                        <View>
                         <Image 
                             style = {styles.image} 
                             source = {require('../../asset/Home_background.jpg')}
                             resizeMode = 'contain'
                             />
-                        </TouchableOpacity>
-                        <TouchableOpacity>
+                        <Button 
+                            title='Read More'
+                            style = {styles.NewsButton}></Button>
+                        </View>
+
+                        <View>
                         <Image 
                             style = {styles.image} 
                             source = {require('../../asset/Home_background.jpg')}
                             resizeMode = 'contain'
                             />
-                        </TouchableOpacity>
+                        <Button 
+                            title='Read More'
+                            style = {styles.NewsButton}></Button>
+                        </View>
+                        
                     </ScrollView>
                     </View>
                 <View style = {styles.view6}> 
@@ -88,23 +105,23 @@ const HomePage = () => {
                 </View>
                 <View style = {styles.view3}>   
                     <View>
-                    <TouchableOpacity>
+                        <TouchableOpacity>
+                            <Image
+                                style = {styles.friendButton} 
+                                source = {require('../../asset/Add_button.png')}
+                           /> 
+                            <Text style = {styles.MassageText} >Tin nhắn</Text> 
+                        </TouchableOpacity>
+                       </View> 
+                        <View> 
+                        <TouchableOpacity> 
                         <Image
-                            style = {styles.friendButton} 
-                            source = {require('../../asset/Add_button.png')}
-                        /> 
-                        <Text style = {styles.MassageText} >Tin nhắn</Text> 
-                    </TouchableOpacity>
-                    </View> 
-                    <View> 
-                    <TouchableOpacity> 
-                    <Image
-                            style = {styles.MotorButton} 
-                            source = {require('../../asset/Motorbike_icon1.png')}
-                        />  
-                        <Text style = {styles.CenterText} >Bắt đầu</Text> 
-                    </TouchableOpacity>
-                    </View>
+                                style = {styles.MotorButton} 
+                                source = {require('../../asset/Motorbike_icon1.png')}
+                            />  
+                            <Text style = {styles.CenterText} >Bắt đầu</Text> 
+                        </TouchableOpacity>
+                        </View>
                     <View> 
                     <TouchableOpacity>
                     <Image
@@ -160,6 +177,11 @@ const styles = StyleSheet.create({
 
         marginLeft: 4,
     },
+
+    NewsButton:{
+        justifyContent: 'center',
+    }, 
+
     view1:{
         flexDirection:'row',
         flex: 2,
