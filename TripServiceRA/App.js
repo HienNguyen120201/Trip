@@ -7,10 +7,10 @@
  */
 
 import React from 'react';
-import HomePage from './src/screens/HomePage';
+import DestinationList from './src/screens/DestinationList.js';
 const App = ()=> {
   return (
-        <HomePage />
+        <DestinationList />
   );
 };
 
