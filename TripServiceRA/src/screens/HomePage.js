@@ -55,7 +55,7 @@ const HomePage = () => {
                             resizeMode = 'contain'
                             />
                         <Button 
-                            title='Read More'
+                            title='More Detail'
                             style = {styles.NewsButton}></Button>
                         </View>
                         
@@ -66,7 +66,7 @@ const HomePage = () => {
                             resizeMode = 'contain'
                             />
                         <Button 
-                            title='Read More'
+                            title='More Detail'
                             style = {styles.NewsButton}></Button>
                         </View>
 
@@ -77,7 +77,7 @@ const HomePage = () => {
                             resizeMode = 'contain'
                             />
                         <Button 
-                            title='Read More'
+                            title='More Detail'
                             style = {styles.NewsButton}></Button>
                         </View>
 
@@ -88,7 +88,7 @@ const HomePage = () => {
                             resizeMode = 'contain'
                             />
                         <Button 
-                            title='Read More'
+                            title='More Detail'
                             style = {styles.NewsButton}></Button>
                         </View>
                         
@@ -108,7 +108,7 @@ const HomePage = () => {
                         <TouchableOpacity>
                             <Image
                                 style = {styles.friendButton} 
-                                source = {require('../../asset/Add_button.png')}
+                                source = {require('../../asset/message.png')}
                            /> 
                             <Text style = {styles.MassageText} >Tin nhắn</Text> 
                         </TouchableOpacity>
