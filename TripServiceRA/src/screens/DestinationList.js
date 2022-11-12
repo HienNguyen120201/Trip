@@ -39,15 +39,19 @@ const DestinationList = () => {
                             source = {require('../../asset/start_icon.png')}
                         /> 
                     </View>
-                    <View style={styles.iconList}> 
+                    <View style={styles.iconList}>
+                        <TouchableOpacity>
                         <Image
                             style = {styles.designbutton} 
                             source = {require('../../asset/edit_button.png')}
                         /> 
+                        </TouchableOpacity>
+                        <TouchableOpacity>
                         <Image
                             style = {styles.designbutton} 
                             source = {require('../../asset/Minus.png')}
                         /> 
+                        </TouchableOpacity>
                     </View>
                     <Text style={styles.CheckpointName}> Name </Text>
                     <Text style={styles.Distance}> +1000 </Text>
@@ -60,15 +64,19 @@ const DestinationList = () => {
                             source = {require('../../asset/flag.png')}
                         /> 
                     </View>
-                    <View style={styles.iconList}> 
+                    <View style={styles.iconList}>
+                        <TouchableOpacity>
                         <Image
                             style = {styles.designbutton} 
                             source = {require('../../asset/edit_button.png')}
                         /> 
+                        </TouchableOpacity>
+                        <TouchableOpacity>
                         <Image
                             style = {styles.designbutton} 
                             source = {require('../../asset/Minus.png')}
                         /> 
+                        </TouchableOpacity>
                     </View>
                     <Text style={styles.CheckpointName}> Name </Text>
                     <Text style={styles.Distance}> +1000 </Text>
@@ -80,15 +88,19 @@ const DestinationList = () => {
                             source = {require('../../asset/flag.png')}
                         /> 
                     </View>
-                    <View style={styles.iconList}> 
+                    <View style={styles.iconList}>
+                        <TouchableOpacity>
                         <Image
                             style = {styles.designbutton} 
                             source = {require('../../asset/edit_button.png')}
                         /> 
+                        </TouchableOpacity>
+                        <TouchableOpacity>
                         <Image
                             style = {styles.designbutton} 
                             source = {require('../../asset/Minus.png')}
                         /> 
+                        </TouchableOpacity>
                     </View>
                     <Text style={styles.CheckpointName}> Name </Text>
                     <Text style={styles.Distance}> +1000 </Text>
@@ -100,15 +112,19 @@ const DestinationList = () => {
                             source = {require('../../asset/flag.png')}
                         /> 
                     </View>
-                    <View style={styles.iconList}> 
+                    <View style={styles.iconList}>
+                        <TouchableOpacity>
                         <Image
                             style = {styles.designbutton} 
                             source = {require('../../asset/edit_button.png')}
                         /> 
+                        </TouchableOpacity>
+                        <TouchableOpacity>
                         <Image
                             style = {styles.designbutton} 
                             source = {require('../../asset/Minus.png')}
                         /> 
+                        </TouchableOpacity>
                     </View>
                     <Text style={styles.CheckpointName}> Name </Text>
                     <Text style={styles.Distance}> +1000 </Text>
@@ -120,15 +136,19 @@ const DestinationList = () => {
                             source = {require('../../asset/flag.png')}
                         /> 
                     </View>
-                    <View style={styles.iconList}> 
+                    <View style={styles.iconList}>
+                        <TouchableOpacity>
                         <Image
                             style = {styles.designbutton} 
                             source = {require('../../asset/edit_button.png')}
                         /> 
+                        </TouchableOpacity>
+                        <TouchableOpacity>
                         <Image
                             style = {styles.designbutton} 
                             source = {require('../../asset/Minus.png')}
                         /> 
+                        </TouchableOpacity>
                     </View>
                     <Text style={styles.CheckpointName}> Name </Text>
                     <Text style={styles.Distance}> +1000 </Text>
@@ -140,15 +160,19 @@ const DestinationList = () => {
                             source = {require('../../asset/finish.png')}
                         /> 
                     </View>
-                    <View style={styles.iconList}> 
+                    <View style={styles.iconList}>
+                        <TouchableOpacity>
                         <Image
                             style = {styles.designbutton} 
                             source = {require('../../asset/edit_button.png')}
                         /> 
+                        </TouchableOpacity>
+                        <TouchableOpacity>
                         <Image
                             style = {styles.designbutton} 
                             source = {require('../../asset/Minus.png')}
                         /> 
+                        </TouchableOpacity>
                     </View>
                     <Text style={styles.CheckpointName}> Name </Text>
                     <Text style={styles.Distance}> +1000 </Text>
@@ -156,7 +180,7 @@ const DestinationList = () => {
                 </ScrollView>
             
             <View style ={styles.ButtonView}>
-                <View>
+                <TouchableOpacity>
                     <Image
                             style = {styles.FriendListButton} 
                             source = {require('../../asset/memberlist.png')}
@@ -164,8 +188,8 @@ const DestinationList = () => {
                     < Text style = {styles.textLeft}>
                         Partner List
                     </Text>
-                </View>
-                <View>
+                </TouchableOpacity>
+                <TouchableOpacity>
                     <Image
                             style = {styles.StartRaceButton} 
                             source = {require('../../asset/Motorbike_icon1.png')}
@@ -173,8 +197,8 @@ const DestinationList = () => {
                     < Text style = {styles.textMiddle}>
                         Start race
                     </Text>
-                </View>
-                <View>
+                </TouchableOpacity>
+                <TouchableOpacity>
                     <Image
                             style = {styles.FriendListButton} 
                             source = {require('../../asset/Add_button.png')}
@@ -182,7 +206,7 @@ const DestinationList = () => {
                     < Text style = {styles.textRight}>
                         Add More
                     </Text>
-                </View>
+                </TouchableOpacity>
             </View>
         </View>
     );
