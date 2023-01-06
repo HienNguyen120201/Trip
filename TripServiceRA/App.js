@@ -8,9 +8,16 @@
 
 import React from 'react';
 import SignInScreen from './src/screens/SignInScreen';
-const App = ()=> {
+
+import JourneyScreen from './src/screens/JourneyScreen';
+const App = () => {
   return (
-        <SignInScreen />
+    <>
+
+      <SignInScreen />
+
+    </>
+
   );
 };
 
