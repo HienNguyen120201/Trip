@@ -14,8 +14,8 @@ const App = () => {
   return (
     <>
 
-      <SignInScreen />
-
+      {/* <SignInScreen /> */}
+      <JourneyScreen />
     </>
 
   );

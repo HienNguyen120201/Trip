@@ -28,7 +28,7 @@ const Footer = (props) => {
     return (
         <View style={styles.bottomContainer}>
             {footerText.map((p, i) => (
-                <View style={styles.icon}>
+                <View key={i}style={styles.icon}>
                     <Image
                         style={styles.image}
                         source={p.icon}></Image>
